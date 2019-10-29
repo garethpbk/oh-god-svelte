@@ -23,6 +23,7 @@
     document.onkeydown = function(e) {
       switch (e.keyCode) {
         case 37:
+          if (segment === '01') return;
           backOrForward.set("back");
           goto(prevRouteSeg);
           break;
