@@ -8,6 +8,8 @@
   let prevRouteSeg;
 
   function getRouteSegments() {
+    if (!segment) return;
+    
     const intSeg = parseInt(segment);
 
     prevRouteSeg =
@@ -34,9 +36,7 @@
 
   afterUpdate(() => {
 		getRouteSegments();
-		
-		console.log($backOrForward);
-  });
+	});
 </script>
 
 <style>
@@ -48,6 +48,10 @@
     font-size: 10px;
   }
 
+  :global(body) {
+    background-color: #000;
+  }
+
   main {
     height: 100vh;
     width: 100vw;
@@ -55,6 +59,12 @@
     position: relative;
 
     overflow: hidden;
+  }
+
+  :global(h1, h2, h3, h4, h5, h6, p) {
+    color: #2C75FF;
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 0.25rem;
   }
 
   :global(.slide-wrapper) {
