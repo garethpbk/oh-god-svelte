@@ -6,10 +6,11 @@
   export let segment;
   let nextRouteSeg;
   let prevRouteSeg;
+  let slides;
 
   function getRouteSegments() {
     if (!segment) return;
-    
+
     const intSeg = parseInt(segment);
 
     prevRouteSeg =
@@ -20,14 +21,19 @@
   }
 
   onMount(() => {
+    fetch("/info")
+      .then(res => res.json())
+      .then(res => (slides = res));
+
     document.onkeydown = function(e) {
       switch (e.keyCode) {
         case 37:
-          if (segment === '01') return;
+          if (segment === slides[0]) return;
           backOrForward.set("back");
           goto(prevRouteSeg);
           break;
         case 39:
+          if (segment === slides[slides.length - 1]) return;
           backOrForward.set("forward");
           goto(nextRouteSeg);
           break;
@@ -36,8 +42,9 @@
   });
 
   afterUpdate(() => {
-		getRouteSegments();
-	});
+    console.log(slides);
+    getRouteSegments();
+  });
 </script>
 
 <style>
@@ -63,8 +70,8 @@
   }
 
   :global(h1, h2, h3, h4, h5, h6, p) {
-    color: #2C75FF;
-    font-family: 'Staatliches', sans-serif;
+    color: #2c75ff;
+    font-family: "Staatliches", sans-serif;
     letter-spacing: 0.25rem;
   }
 
