@@ -25,7 +25,10 @@
       .then(res => res.json())
       .then(res => (slides = res));
 
+    if (!slides) slides = ["01", "02", "03"];
+
     document.onkeydown = function(e) {
+      console.log(slides);
       switch (e.keyCode) {
         case 37:
           if (segment === slides[0]) return;
@@ -42,7 +45,6 @@
   });
 
   afterUpdate(() => {
-    console.log(slides);
     getRouteSegments();
   });
 </script>

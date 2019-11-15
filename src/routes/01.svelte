@@ -1,6 +1,6 @@
 <script>
-  import SlideWrapper from '../components/SlideWrapper.svelte';
-  import SvelteLogo from '../components/SvelteLogo.svelte';
+  import SlideWrapper from "../components/SlideWrapper.svelte";
+  import SvelteLogo from "../components/SvelteLogo.svelte";
 </script>
 
 <style>
@@ -29,6 +29,9 @@
 
 <SlideWrapper>
   <h1>Oh god not another framework</h1>
-  <h2>An introduction to <pre>Svelte</pre></h2>
+  <h2>
+    An introduction to
+    <pre>Svelte</pre>
+  </h2>
   <SvelteLogo />
 </SlideWrapper>
