@@ -1,8 +1,14 @@
 <script>
-  import SlideWrapper from '../components/SlideWrapper.svelte';
+  import SlideWrapper from "../components/SlideWrapper.svelte";
+  import Appear from "../components/Appear.svelte";
 </script>
 
 <SlideWrapper>
   <h1>Page 3</h1>
-  <p>A wrapper IS nice :)</p>
+  <Appear>
+    <p>A wrapper IS nice :)</p>
+    <p>Hope this works</p>
+    <p>Oh pls</p>
+    <p>Four items!!!</p>
+  </Appear>
 </SlideWrapper>

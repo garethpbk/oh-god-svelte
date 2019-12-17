@@ -1,0 +1,21 @@
+1. Title Slide
+2. What is Svelte
+3. How is it different from React, Vue
+4. "Write less code"
+5. "No virtual DOM"
+6. "Truly reactive" - Rethinking reactivity
+7. .svelte files - single file components
+8. Styling
+9. <script> tag - variable assignment
+10. Reactivity
+11. Props
+12. Lifecycles
+13. HTML templating
+14. Displaying data
+15. Conditionals & loops
+16. Await block
+17. Animations
+18. Store
+19. Sapper
+20. Where to go from here
+21. Thanks

@@ -1,4 +1,5 @@
 <script>
+  import ResetAppear from "../components/ResetAppear.svelte";
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import SvelteLogo from "../components/SvelteLogo.svelte";
 </script>
@@ -28,6 +29,7 @@
 </style>
 
 <SlideWrapper>
+  <ResetAppear />
   <h1>Oh god not another framework</h1>
   <h2>
     An introduction to

@@ -1,7 +1,7 @@
 <script>
   import { onMount, afterUpdate } from "svelte";
   import { goto } from "@sapper/app";
-  import { backOrForward } from "../store";
+  import { appearCount, appearLength, backOrForward } from "../store";
 
   export let segment;
   let nextRouteSeg;
@@ -28,15 +28,14 @@
     if (!slides) slides = ["01", "02", "03"];
 
     document.onkeydown = function(e) {
-      console.log(slides);
       switch (e.keyCode) {
         case 37:
-          if (segment === slides[0]) return;
+          if (segment === slides[0] || $appearCount !== $appearLength) return;
           backOrForward.set("back");
           goto(prevRouteSeg);
           break;
         case 39:
-          if (segment === slides[slides.length - 1]) return;
+          if (segment === slides[slides.length - 1] || $appearCount > 0) return;
           backOrForward.set("forward");
           goto(nextRouteSeg);
           break;
@@ -54,7 +53,7 @@
     box-sizing: border-box;
   }
 
-  html {
+  :global(html) {
     font-size: 10px;
   }
 
