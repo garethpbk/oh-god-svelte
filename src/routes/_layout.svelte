@@ -67,7 +67,7 @@
 </script>
 
 <style>
-  * {
+  :global(*) {
     box-sizing: border-box;
   }
 
@@ -77,6 +77,11 @@
 
   :global(body) {
     background-color: #000;
+  }
+
+  :global(::-webkit-scrollbar) {
+    width: 0;
+    background: transparent;
   }
 
   main {
@@ -125,6 +130,17 @@
     background-color: #2c75ff;
 
     color: white;
+  }
+
+  :global(input) {
+    width: 250px;
+
+    background-color: #2c75ff;
+
+    color: white;
+    font-size: 2rem;
+
+    padding: 10px;
   }
 </style>
 

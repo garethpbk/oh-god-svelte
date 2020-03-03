@@ -21,6 +21,8 @@
     margin: 0 auto;
 
     text-align: center;
+
+    overflow-y: scroll;
   }
 </style>
 

@@ -14,17 +14,6 @@
 </script>
 
 <style>
-  input {
-    width: 250px;
-
-    background-color: #2c75ff;
-
-    color: white;
-    font-size: 2rem;
-
-    padding: 10px;
-  }
-
   .square {
     height: 250px;
     width: 250px;
