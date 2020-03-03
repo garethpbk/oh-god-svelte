@@ -36,4 +36,6 @@
     <pre>Svelte</pre>
   </h2>
   <SvelteLogo />
+  <p>Gareth Kloeden</p>
+  <p>March 3, 2020</p>
 </SlideWrapper>

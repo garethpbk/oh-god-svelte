@@ -1,11 +1,13 @@
 <script>
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import Appear from "../components/Appear.svelte";
+  import Counter from "../components/Counter.svelte";
 </script>
 
 <SlideWrapper>
-  <h1>Counter Component</h1>
+  <h1>Data & Props</h1>
   <Appear>
-    <img alt="Counter component" src="counter.jpg" />
+    <p>What if we just used JavaScript syntax!?</p>
+    <Counter />
   </Appear>
 </SlideWrapper>

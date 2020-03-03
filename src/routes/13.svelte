@@ -1,13 +1,13 @@
 <script>
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import Appear from "../components/Appear.svelte";
-  import Conditional from "./Conditional.svelte";
+  import Binding from "../components/Binding.svelte";
 </script>
 
 <SlideWrapper>
-  <h1>Conditional Blocks</h1>
+  <h1>Binding Values & Template Syntax</h1>
   <Appear>
-    <p>if...else if...else</p>
-    <Conditional />
+    <Binding />
+    <img alt="Binding values" src="binding.jpg" />
   </Appear>
 </SlideWrapper>

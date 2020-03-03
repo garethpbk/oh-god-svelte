@@ -20,10 +20,12 @@
   }
 </style>
 
-<ul>
-  {#each list as fruit}
-    <li>{fruit}</li>
-  {/each}
-</ul>
-<input bind:value={newFruit} />
-<button on:click={() => (list = [...list, newFruit])}>Add New Fruit</button>
+<div>
+  <ul>
+    {#each list as fruit}
+      <li>{fruit}</li>
+    {/each}
+  </ul>
+  <input bind:value={newFruit} />
+  <button on:click={() => (list = [...list, newFruit])}>Add New Fruit</button>
+</div>

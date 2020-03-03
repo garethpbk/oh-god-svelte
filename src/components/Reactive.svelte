@@ -2,7 +2,7 @@
   let number = 1;
   let colorVal = "rgba(0, 0, 0)";
 
-  function getRandom(val) {
+  function getRandom() {
     return Math.floor(Math.random() * 255);
   }
 
@@ -22,7 +22,9 @@
   }
 </style>
 
-<p>Number: {number}</p>
-<input bind:value={number} />
-<div class="square" style="background-color: {colorVal}" />
-<p>Color Value: {colorVal}</p>
+<div>
+  <p>Number: {number}</p>
+  <input bind:value={number} />
+  <div class="square" style="background-color: {colorVal}" />
+  <p>Color Value: {colorVal}</p>
+</div>

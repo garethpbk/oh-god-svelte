@@ -4,9 +4,8 @@
 </script>
 
 <SlideWrapper>
-  <h1>CounterView Component</h1>
+  <h1>Counter Component</h1>
   <Appear>
-    <img alt="CounterView component" src="counterview.jpg" />
-    <p>Congrats you understand like 50% of Svelte</p>
+    <img alt="Counter component" src="counter.jpg" />
   </Appear>
 </SlideWrapper>

@@ -1,12 +1,12 @@
 <script>
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import Appear from "../components/Appear.svelte";
+  import Reactive from "../components/Reactive.svelte";
 </script>
 
 <SlideWrapper>
-  <h1>Reactive Statement</h1>
+  <h1>$:</h1>
   <Appear>
-    <img alt="Reactive color" src="reactive-color.jpg" />
-    <p>This is confusing!</p>
+    <Reactive />
   </Appear>
 </SlideWrapper>

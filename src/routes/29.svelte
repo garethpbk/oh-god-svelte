@@ -4,9 +4,10 @@
 </script>
 
 <SlideWrapper>
-  <h1>Reactive Statement</h1>
+  <h1>Thank You</h1>
   <Appear>
-    <img alt="Reactive color" src="reactive-color.jpg" />
-    <p>This is confusing!</p>
+    <p>https://oh-god-svelte.netlify.com</p>
+    <p>https://github.com/garethpbk/oh-god-svelte</p>
+    <p>@garethpbk on github, @garethbk everywhere else</p>
   </Appear>
 </SlideWrapper>

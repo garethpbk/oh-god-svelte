@@ -1,23 +1,15 @@
 <script>
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import Appear from "../components/Appear.svelte";
-  import Store from "../components/Store.svelte";
+  import Lifecycle from "../components/Lifecycle.svelte";
 </script>
 
-<style>
-  img {
-    display: block;
-
-    margin: 25px auto;
-  }
-</style>
-
 <SlideWrapper>
-  <h1>Stores</h1>
+  <h1>Lifecycle</h1>
+  <Lifecycle />
   <Appear>
-    <p>Svelte's built-in state management solution</p>
-    <Store />
-    <img alt="Store 1" src="store-1.jpg" />
-    <img alt="Store 2" src="store-2.jpg" />
+    <p>onMount</p>
+    <p>beforeUpdate, afterUpdate, onDestroy, etc...</p>
+    <img alt="Lifecycle" src="lifecycle.jpg" />
   </Appear>
 </SlideWrapper>

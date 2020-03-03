@@ -1,14 +1,20 @@
 <script>
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import Appear from "../components/Appear.svelte";
-  import Use from "../components/Use.svelte";
+  import Events from "../components/Events.svelte";
 </script>
 
+<style>
+  img {
+    margin: 50px 0 0 0;
+  }
+</style>
+
 <SlideWrapper>
-  <h1>Use Directive</h1>
+  <h1>Event Handlers</h1>
   <Appear>
-    <p>use:action</p>
-    <p>"Actions are functions that are called when the element is created."</p>
-    <Use />
+    <p>on:event</p>
+    <Events />
+    <img alt="Events" src="events.jpg" />
   </Appear>
 </SlideWrapper>

@@ -1,12 +1,14 @@
 <script>
   import SlideWrapper from "../components/SlideWrapper.svelte";
   import Appear from "../components/Appear.svelte";
-  import Await from "./Await.svelte";
 </script>
 
 <SlideWrapper>
-  <h1>Await Blocks</h1>
+  <h1>Iteration Blocks</h1>
   <Appear>
-    <Await />
+    <img alt="Each blocks" src="each-blocks.jpg" />
+    <p>
+      (array assignment must be reactive - push, splice etc don't just work)
+    </p>
   </Appear>
 </SlideWrapper>
