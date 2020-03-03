@@ -30,6 +30,7 @@
       .then(res => res.json())
       .then(res => (slides = res));
 
+    // for remote deployment - Netlify can't use Node in info.js, so have to tell it what slides to look for
     if (!slides)
       slides = [
         "01",
