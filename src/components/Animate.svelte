@@ -14,7 +14,9 @@
   }
 </style>
 
-<button on:click={() => (visible = !visible)}>Faaaaddeeee</button>
-{#if visible}
-  <div class="square" transition:fade />
-{/if}
+<div>
+  <button on:click={() => (visible = !visible)}>Faaaaddeeee</button>
+  {#if visible}
+    <div class="square" transition:fade />
+  {/if}
+</div>

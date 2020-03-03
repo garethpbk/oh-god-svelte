@@ -7,8 +7,8 @@
   <button on:click={() => (message = 'Click handled.')}>Click</button>
   <button
     on:mouseover={() => (message = 'Mouseover handled.')}
-    on:mouseleave={() => (message = 'Nothing handled.')}>
-    Hover
+    on:mouseleave={() => (message = 'Mouseleave handled.')}>
+    Mouseover
   </button>
   <button on:click|once={() => (message = 'Click once handled.')}>
     Click Once
