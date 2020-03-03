@@ -4,11 +4,14 @@
 </script>
 
 <SlideWrapper>
-  <h1>Page 3</h1>
+  <h1>What is Svelte</h1>
   <Appear>
-    <p>A wrapper IS nice :)</p>
-    <p>Hope this works</p>
-    <p>Oh pls</p>
-    <p>Four items!!!</p>
+    <p>
+      A frontend JavaScript framework where work is done at
+      <strong>compile time</strong>
+      instead of
+      <strong>runtime</strong>
+    </p>
+    <img alt="Rich Harris" src="rich-harris.jpg" />
   </Appear>
 </SlideWrapper>

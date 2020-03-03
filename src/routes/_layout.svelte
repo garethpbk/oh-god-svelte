@@ -18,6 +18,11 @@
 
     nextRouteSeg =
       segment.charAt(0) === "0" ? `0${intSeg + 1}` : `${intSeg + 1}`;
+
+    if (nextRouteSeg.length > 2)
+      nextRouteSeg = nextRouteSeg.substr(1, nextRouteSeg.length);
+
+    if (prevRouteSeg.length === 1) prevRouteSeg = `0${prevRouteSeg}`;
   }
 
   onMount(() => {
@@ -25,7 +30,20 @@
       .then(res => res.json())
       .then(res => (slides = res));
 
-    if (!slides) slides = ["01", "02", "03"];
+    if (!slides)
+      slides = [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11"
+      ];
 
     document.onkeydown = function(e) {
       switch (e.keyCode) {
@@ -88,6 +106,25 @@
     width: 100%;
 
     overflow: hidden;
+  }
+
+  :global(button) {
+    padding: 1rem;
+
+    background-color: transparent;
+
+    border: 2px solid #2c75ff;
+
+    color: #2c75ff;
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
+  :global(button:hover) {
+    background-color: #2c75ff;
+
+    color: white;
   }
 </style>
 
